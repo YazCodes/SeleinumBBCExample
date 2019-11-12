@@ -1,4 +1,4 @@
-package com.spartaglobal;
+package com.spartaglobal.ToolsQAWebExample;
 
 import com.google.errorprone.annotations.Var;
 import org.openqa.selenium.By;

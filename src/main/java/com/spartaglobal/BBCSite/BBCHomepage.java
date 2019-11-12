@@ -8,22 +8,24 @@ public class BBCHomepage {
     private WebDriver driver;
 
     private String homepageURL = "https://www.bbc.co.uk/";
-
     private By signinLinkID = By.id("idcta-link");
 
     public BBCHomepage (WebDriver driver) {
         this.driver = driver;
     }
 
-    public void goToTheBBCHomepage () {
+    public BBCHomepage goToTheBBCHomepage () {
         driver.navigate().to(homepageURL);
+        return this;
     }
 
-    public void ClickSignInLink () {
+    public BBCHomepage ClickSignInLink () {
         driver.findElement(signinLinkID).click();
+        return this;
     }
 
-    public void closeDriver () {
+    public BBCHomepage closeDriver () {
         driver.close();
+        return this;
     }
 }
