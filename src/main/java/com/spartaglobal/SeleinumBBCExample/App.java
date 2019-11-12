@@ -28,15 +28,29 @@ public class App
 
         toolsQAWebsite.goToHomePage();
 
-        toolsQAWebsite.FirstNameOne();
+        toolsQAWebsite.clickCookieButton();
+        toolsQAWebsite.clickLinkText();
+       System.out.println(toolsQAWebsite.getcurrentURL());
+       toolsQAWebsite.backBroswer();
+        toolsQAWebsite.inputFirstName("yasmin");
+        toolsQAWebsite.inputlastName("Jones");
+       System.out.println(toolsQAWebsite.getfirstnamefieldtesxt());
+       System.out.println(toolsQAWebsite.getlastnamefieldtesxt());
 
-        toolsQAWebsite.LastName();
+        //toolsQAWebsite.getSexElement();
 
-        toolsQAWebsite.FemaleButton();
+       toolsQAWebsite.getSexElement();
+      // toolsQAWebsite.getYearsOfExperince();
 
-      //  toolsQAWebsite.MaleButton();
+       toolsQAWebsite.inputDate("12/11/2019");
+        System.out.println(toolsQAWebsite.getDatefieldtext());
 
-        toolsQAWebsite.OneYearOfExperince();
+        toolsQAWebsite.getProfession();
+
+        toolsQAWebsite.getAutomationTool();
+
+
+
 
 
 
